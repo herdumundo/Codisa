@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i=new Intent(this,registro_inventario.class);
         startActivity(i);
     }
+
+    public void ir_stkw001(View v){
+        Intent i=new Intent(this,stkw001.class);
+        startActivity(i);
+    }
 }
