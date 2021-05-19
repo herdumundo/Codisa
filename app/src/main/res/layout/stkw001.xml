@@ -7,7 +7,7 @@
     tools:context=".stkw001">
 
 
-    <com.example.codisa.MultipleSelectionSpinner
+    <Utilidades.MultipleSelectionSpinner
         android:id="@+id/cbox_productos"
         android:layout_width="150dp"
 

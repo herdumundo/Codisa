@@ -1,2 +1,4 @@
+include ':ojdbc5'
+include ':ojdbc14'
 include ':app'
 rootProject.name = "Codisa"

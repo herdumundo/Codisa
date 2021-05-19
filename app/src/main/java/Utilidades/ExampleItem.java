@@ -1,4 +1,4 @@
-package com.example.codisa;
+package Utilidades;
 
 public class ExampleItem {
     private int mImageResource;

@@ -6,10 +6,10 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import Utilidades.ExampleItem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,8 +31,7 @@ public class registro_inventario extends AppCompatActivity {
         fillExampleList();
         listar_recicler();
         //initToolbar();
-
-
+     
         this.Searchtext = (EditText) findViewById(R.id.search_input);
         this.txt_cantidad = (EditText) findViewById(R.id.txt_cantidad);
          this.Searchtext.addTextChangedListener(new TextWatcher() {
@@ -63,7 +62,7 @@ public class registro_inventario extends AppCompatActivity {
     {
         recyclerView.setHasFixedSize(true);
         LayoutManager layoutManager = new LinearLayoutManager(this);
-        this.adapter = new ExampleAdapter(this.exampleList);
+        this.adapter = new  ExampleAdapter(this.exampleList);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(this.adapter);
     }
